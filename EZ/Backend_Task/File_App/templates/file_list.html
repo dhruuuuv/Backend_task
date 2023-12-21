@@ -1,0 +1,7 @@
+<!-- File_App/templates/file_app/file_list.html -->
+<h2>File List</h2>
+<ul>
+    {% for file in files %}
+        <li>{{ file.title }} - <a href="{{ file.file.url }}" download>Download</a></li>
+    {% endfor %}
+</ul>
